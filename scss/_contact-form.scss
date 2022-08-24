@@ -1,0 +1,42 @@
+@import "./variable";
+
+.hide {
+  display: none;
+}
+
+.error-hint {
+  font-size: 1rem * 1.2;
+  color: $error-color;
+}
+
+input {
+  margin: 1% auto;
+}
+
+textarea.invalid,
+input.invalid {
+  border: 3px solid $error-color;
+}
+
+.thank-you {
+  height: 100%;
+  padding: 8rem 0;
+  text-align: center;
+  color: $text-color;
+
+  #{&}__title {
+    font-size: 3rem;
+    letter-spacing: 0.7;
+  }
+
+  &__content {
+    font-size: 1.25rem;
+    a {
+      cursor: pointer;
+    }
+  }
+}
+
+.form-control {
+  margin: 1%;
+}
